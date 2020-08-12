@@ -156,7 +156,7 @@ class Text extends AbstractFrameReflower
             }
         }
 
-        $offset = mb_strlen($str);
+        $offset = mb_strlen($str, mb_detect_encoding($str));
 
         // More debugging:
         //     var_dump($str);
